@@ -11,6 +11,7 @@ dogu==1.0
 doqu==0.28.2
 entrypoints==0.3
 Flask==1.1.2
+flask-heroku==0.1.9
 Flask-SQLAlchemy==2.4.3
 Flask-WTF==0.14.3
 formatizer==0.1.1
@@ -48,6 +49,7 @@ pandocfilters==1.4.2
 parso==0.7.0
 pexpect==4.8.0
 pickleshare==0.7.5
+pkg-resources==0.0.0
 prometheus-client==0.8.0
 prompt-toolkit==2.0.10
 psycopg2-binary==2.8.5
