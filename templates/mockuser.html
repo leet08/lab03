@@ -1,0 +1,16 @@
+<h1>Generate mock data:</h1>
+<form class="user-form" method="POST" action="/mockuser">
+    {{ form.hidden_tag() }}
+    <div class="user-form-group">
+        {{ form.mock_num.label }}:
+        {{ form.mock_num }}
+        {% if form.user_id.errors %}
+            {% for error in form.user_id.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-submit">
+        {{ form.submit }}
+    </div>
+</form>

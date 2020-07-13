@@ -1,0 +1,45 @@
+<h1>Update user:</h1>
+<form class="user-form" method="POST" action="/updateuser">
+    {{ form.hidden_tag() }}
+    <h1> Enter current record <h1>
+    <div class="user-form-group">
+        {{ form.first_name.label }}:
+        {{ form.first_name }}
+        {% if form.first_name.errors %}
+            {% for error in form.first_name.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-group">
+        {{ form.age.label }}:
+        {{ form.age }}
+        {% if form.age.errors %}
+            {% for error in form.age.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <h1> Update record <h1>
+    <div class="user-form-group">
+        {{ form.first_name_new.label }}:
+        {{ form.first_name_new }}
+        {% if form.first_name_new.errors %}
+            {% for error in form.first_name_new.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-group">
+        {{ form.age_new.label }}:
+        {{ form.age_new }}
+        {% if form.age_new.errors %}
+            {% for error in form.age_new.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-submit">
+        {{ form.submit }}
+    </div>
+</form>

@@ -1,0 +1,16 @@
+<h1>Delete user:</h1>
+<form class="user-form" method="POST" action="/deleteuser">
+    {{ form.hidden_tag() }}
+    <div class="user-form-group">
+        {{ form.user_id.label }}:
+        {{ form.user_id }}
+        {% if form.user_id.errors %}
+            {% for error in form.user_id.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-submit">
+        {{ form.submit }}
+    </div>
+</form>

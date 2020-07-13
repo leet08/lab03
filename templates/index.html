@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+	<div class="section-content">
+		{%for i in range(0, len)%} 
+		<h2>{{ user[i].user_id }}: {{user[i].first_name}} ({{user[i].age}}) </h2>
+		{%endfor%} 
+	</div>
+</main>
+{% endblock %}
