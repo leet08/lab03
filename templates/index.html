@@ -6,5 +6,14 @@
 		<h2>{{ user[i].user_id }}: {{user[i].first_name}} ({{user[i].age}}) </h2>
 		{%endfor%} 
 	</div>
+	<div>
+		<h1>See other pages:<h1>
+		<a href="https://enigmatic-brook-33205.herokuapp.com/adduser">Add a user</a>
+		<a href="https://enigmatic-brook-33205.herokuapp.com/viewuser/<first_name>">View a user (add first name to URL)</a>
+		<a href="https://enigmatic-brook-33205.herokuapp.com/deleteuser">Delete a user</a>
+		<a href="https://enigmatic-brook-33205.herokuapp.com/updateuser">Update a user</a>
+		<a href="https://enigmatic-brook-33205.herokuapp.com/mockuser">Generate test data</a>
+
+	</div>
 </main>
 {% endblock %}
